@@ -7,14 +7,17 @@ For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)
 
 user_number = int(input("Please enter a number : "))
 
-list_range = list(range(1,user_number+1))
-
-print(list_range)
+list_range = list(range(1, user_number+1))
 
 divisorList = []
 
+# Solution 1
 for n in list_range:
     if user_number % n == 0:
         divisorList.append(n)
 
-print(divisorList) 
+print(divisorList)
+
+# Solution 2
+d = [x for x in list_range if user_number % x == 0]
+print(d)
