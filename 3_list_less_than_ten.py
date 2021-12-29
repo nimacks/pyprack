@@ -8,5 +8,8 @@ and write a program that prints out all the elements of the list that are less t
 number_list = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
 for i in number_list:
-    if i > 5:
+    if i < 5:
         print(i)
+
+numbers_five_less = [x for x in number_list if x < 5]
+print(numbers_five_less)
