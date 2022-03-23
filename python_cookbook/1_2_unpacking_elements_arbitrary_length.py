@@ -56,3 +56,6 @@ def throwaway ():
 #tuple_star()
 #stringify()
 throwaway()
+
+if __name__ == "__main__":
+    throwaway()
