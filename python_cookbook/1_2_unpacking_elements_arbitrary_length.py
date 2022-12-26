@@ -9,7 +9,7 @@ Use the python star expression to encapsulate the numbers you're interested in
 """
 
 # star unpacking throwing elements
-def drop_frist_last(grades):
+def drop_first_last(grades):
     first, *middle, last = grades
     return (sum(middle)/len(middle))
 
