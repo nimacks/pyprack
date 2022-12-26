@@ -19,7 +19,7 @@ print(len(this_tuple))
 # creating a tuple with one item requires a comma at the end
 tuple_two = ("apple",)
 
-# tuples can contain diferent data types
+# tuples can contain different data types
 tuple_three = ("abc", 34, True, 40, "male")
 
 # tuple() constructor

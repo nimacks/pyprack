@@ -28,13 +28,21 @@ def find_tuple():
         {'tweet1': 'welcome to twitter', 'length': 10},
         {'tweet1': 'this is the second message', 'length': 20}
     ]
+
+    people = [
+        {'person': 'john doe', 'height': 200},
+        {'person': 'eve johnson', 'height': 150},
+        {'person': 'mary blithe', 'height': 170},
+    ]
     
     longest_tweet = heapq.nlargest(1,tweets,key=lambda k:k['length'])
     cheap = heapq.nsmallest(3, portfolio, key=lambda s: s['shares'])
     expensive = heapq.nlargest(1, portfolio, key=lambda p: p['price'])
+    two_tallest_person = heapq.nlargest(2, people, key=lambda t: t['height'])
     print(cheap)
     print(expensive)
     print(longest_tweet)
+    print(f"The two tallest people are {two_tallest_person}")
 
 
 # find()

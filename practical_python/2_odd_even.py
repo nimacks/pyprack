@@ -2,12 +2,11 @@
 Write a pogram to determine if a number is odd or even
 """
 
-
 try:
-    x = int(input("Insert any number"))
-    if x%2 ==0:
+    x: int = int(input("Insert any number"))
+    if 0 == x % 2:
         print("The number you entered is even")
-    else: 
+    else:
         print("The number you entered is odd")
 except:
     print("You did not enter a number")
