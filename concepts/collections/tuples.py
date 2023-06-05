@@ -1,7 +1,8 @@
 """
 Tuples are used to store multiple items in a single variable.
 
-Tuple is one of 4 built-in data types in Python used to store collections of data, the other 3 are List, Set, and Dictionary, all with different qualities and usage.
+Tuple is one of 4 built-in data types in Python used to store collections of data, 
+the other 3 are List, Set, and Dictionary, all with different qualities and usage.
 
 A tuple is a collection which is ordered and unchangeable.
 
@@ -15,6 +16,9 @@ Characteristics
 # find the length of a tuple
 this_tuple = ("apple", "banana", "cherry")
 print(len(this_tuple))
+
+tuple_variety = ("1", 1, "one")
+print(tuple_variety[0])
 
 # creating a tuple with one item requires a comma at the end
 tuple_two = ("apple",)
