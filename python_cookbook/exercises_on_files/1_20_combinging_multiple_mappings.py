@@ -20,3 +20,8 @@ print(c['z']) # Outputs 3 (from a)
 # However, the mappings are not literally merged together. Instead, a ChainMap
 # simply keeps a list of the underlying mappings and redefines common dictionary
 # operations to scan the list. Most operations will work. For example:  
+
+# Alternative to ChainMap
+# The update() method of dictionaries does not return any value. It updates the
+# Dictionary with elements from a dictionary object or an iterable object of key/value pairs.   
+#
