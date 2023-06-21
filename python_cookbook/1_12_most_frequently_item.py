@@ -9,9 +9,10 @@ from collections import Counter
 word_counts = Counter(words)
 top_three = word_counts.most_common(3)
 top_one = word_counts.most_common(1)
+top_four = top_one + top_three
 print(top_one)
 print(top_one[0])
-print(top_three)
+print(top_four)
 
 # iterate over the top three words
 for word, count in top_three:
